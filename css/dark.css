@@ -1,0 +1,496 @@
+/* Обнуление стилей */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Начало css кода */
+
+body {
+    background: #2A2E36;
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 400;
+    color: #E0DBDB;
+    font-family: 'PT Serif', sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/** header **/
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+header a{
+    color: #fff;
+}
+
+.header__top{
+    background-color: #418E97;
+    color: #fff;
+}
+
+.logo{
+    margin-right: 10px;
+}
+
+.header__container{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header_logo{
+    display: flex;
+    align-items: center;
+    margin-right: 600px;
+}
+
+.header__bottom{
+    background: #5DB4C0;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.menu__list{
+    display: flex;
+}
+
+.menu__list li{
+    margin-right: 30px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.header__basket{
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.header__log-in{
+    display: flex;
+    align-items: center;
+}
+
+.log-in__img{
+    margin-right: 10px;
+}
+
+.basket__img{
+    margin-right: 10px;
+}
+
+/* main block */
+
+.main__block{
+    background: rgb(251,239,239);
+    background: radial-gradient(circle, rgb(156, 90, 174) 0%, rgb(95, 15, 126) 50%, rgb(25, 91, 120) 100%);
+    padding-top: 68px;
+    padding-bottom: 100px;
+    color:#342447;
+}
+
+.main__container{
+    display: flex;
+    justify-content: center;
+}
+
+.central-card{
+    background: url('../img/first_scrin/fantastic-blue-sky.jpg') no-repeat center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 65px 140px;
+}
+
+.main__collection{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    text-transform: none;
+    letter-spacing: 0.1em;
+}
+
+.main__button{
+    margin-top: 24px;
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 200%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    min-height: 48px;
+    letter-spacing: 0.2px;
+    border-radius: 10px;
+    background-color: #ac83d3;
+}
+
+.main__new{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main__text{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Categories */
+
+.categories{
+    margin-top: 80px;
+}
+
+.categories a{
+    color: inherit;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.categories__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories__category{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px 15px 15px 15px;
+    background: #343944;
+    border-radius: 10px;
+}
+
+.categories__other{
+    padding: 55px 50px;
+}
+
+.categories__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories__column {
+    margin-right: 30px;
+    width: 20%;
+}
+
+.categories__column .categories__category:last-child:not(.categories__trousers){
+    margin-top: 50px;
+}
+
+.categories__header{
+    margin-bottom: 50px;
+}
+
+.categories__tshirt .categories__img{
+    margin: 15px 0 20px 0;
+}
+
+.categories__trousers .categories__img{
+    margin: 35px 0 80px 0;
+}
+
+.categories__shoes .categories__img{
+    margin: 10px 0 20px 0;
+}
+
+/* Sales */
+
+.sales{
+    background: rgb(61,159,180);
+    background: linear-gradient(90deg, rgba(61,159,180,1) 0%, rgba(138,97,174,1) 100%);
+    margin: 80px 0px;
+    padding: 24px 0;
+}
+
+.sales__container{
+    display: flex;
+    align-items: center;
+}
+
+.sales__img, .sales__header{
+    margin-right: 30px;
+}
+
+/* popular */
+
+.popular{
+    padding-bottom: 80px;
+}
+
+.popular__title{
+    margin-bottom: 50px;
+}
+
+.popular__cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular__card{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 15px;
+    border-radius: 10px;
+    background: #343944;
+}
+
+.popular__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.popular__subtitle{
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 15px;
+}
+
+.popular__price{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+}
+
+.popular__basket{
+    padding: 5px;
+}
+
+/* limited edition */
+
+.limited{
+    padding: 80px 0 80px 0;
+    background: linear-gradient(90deg, rgba(61,159,180,1) 0%, rgba(48,114,119,1) 100%);
+}
+
+.limited__container{
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.limited__offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.limited__description{
+    text-align: center;
+    max-width: 350px;
+    line-height: 16px;
+}
+
+.limited__offer h4 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+.limited__button{
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 200%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    min-height: 48px;
+    letter-spacing: 0.2px;
+    border-radius: 10px;
+    background-color: #3a9aa8;
+}
+
+.limited__offer *:not(:last-child){
+    margin-bottom: 20px;
+}
+
+/* Stores partners */
+
+#s6{
+    padding: 80px 0 80px 0;
+}
+
+#s6 .shops__container{
+    border-radius: 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background: #343944;
+}
+
+.shops__title{
+    margin-bottom: 20px;
+}
+
+.rounded {
+    counter-reset: li; 
+    list-style: none; 
+    font: 14px "Trebuchet MS", "Lucida Sans";
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    max-width: 600px;
+    min-width: 200px;
+}
+.rounded a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #9cd6e7;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: .3s ease-out;
+}
+.rounded a:hover {background: #28ccd8;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 65%;
+    margin-top: -1.3em;
+    background: #d4bce3;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+/* footer */
+
+footer {
+    background: #49335E;
+    padding: 40px 300px;
+    color: #fff;
+}
+
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer__img{
+    margin-right: 15px;
+}
+
+.footer__title{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer__arrow{
+    margin-left: 120px;
+}
+
+.footer__number{
+    font-size: 18px;
+}
